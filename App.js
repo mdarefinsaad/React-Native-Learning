@@ -14,7 +14,9 @@ import React from 'react';
 import { useDimensions, useDeviceOrientation } from "@react-native-community/hooks";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 import ViewImageScreen from './app/screens/ViewImageScreen';
+import {MaterialCommunityIcons} from '@expo/vector-icons';
 
+import AppText from "./app/components/AppText";
 
 export default function App() {
 
@@ -24,7 +26,7 @@ export default function App() {
       justifyContent: "center",
       alignItems: "center"
     }}>
-      
+        <MaterialCommunityIcons name="email" size={200} color={"dodgerblue"}/>
     </View>
   );
 }
