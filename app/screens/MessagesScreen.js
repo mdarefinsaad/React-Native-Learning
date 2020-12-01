@@ -28,11 +28,13 @@ function MessagesScreen(props) {
             <FlatList 
                 data={messages}
                 keyExtractor={messages => messages.id.toString()}
-                renderItem={({item}) => 
+                renderItem={({ item }) => ( 
                     <ListItem 
                         title={item.title}
                         subTitle={item.description}
-                        image={item.image}/>}
+                        image={item.image}
+                        onPress={() => console.log("message selected", item)} />
+                    )}
                 ItemSeparatorComponent={ListItemSparator}
             /> 
         </Screen>
