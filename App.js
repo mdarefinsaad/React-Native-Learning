@@ -28,15 +28,7 @@ import AccountScreen from './app/components/AccountScreen'
 export default function App() {
 
   return ( 
-  <Screen>
-    <ListItem 
-      title="My Title" 
-      subTitle="My subtitle" 
-      ImageComponent={
-        <Icon 
-          name="email"/>
-      }/>
-  </Screen>
+    <AccountScreen/>
   );
 }
 
