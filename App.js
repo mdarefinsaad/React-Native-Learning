@@ -25,10 +25,13 @@ import Screen from './app/components/Screen';
 import Icon from './app/components/Icon';
 import ListItem from './app/components/ListItem';
 import AccountScreen from './app/components/AccountScreen'
+import LisitingsScreen from './app/screens/ListingsScreens'
+
+
 export default function App() {
 
   return ( 
-    <AccountScreen/>
+    <LisitingsScreen/>
   );
 }
 
