@@ -7,7 +7,8 @@ import {
   Text,
   View,
   Alert,
-  TextInput
+  TextInput,
+  Switch
 } from 'react-native';
 
 import { StatusBar } from 'expo-status-bar';
@@ -30,11 +31,12 @@ import AppTextInput from './app/components/AppTextInput';
 
 
 export default function App() {
+  const [isNew, setIsNew] = useState(false);
 
   const [firstName, setFirstName] = useState('');
   return ( 
     <Screen>
-      <AppTextInput placeholder="First Name" icon="email"/>
+      <Switch value={isNew} onValueChange={newValue => setIsNew(newValue)}/>
     </Screen>
   );
 }
